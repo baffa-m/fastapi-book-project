@@ -22,7 +22,7 @@ jobs:
 
       - name: Deploy Application
         run: |
-          ssh ubuntu@${{ secrets.EC2_IP }} << 'EOF' 
+          ssh baffa@${{ secrets.EC2_IP }} << 'EOF' 
             cd /home/ubuntu/root/fastapi-book-project
             git pull origin main
             source venv/bin/activate
