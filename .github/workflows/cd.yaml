@@ -41,7 +41,7 @@ jobs:
             pip install -r requirements.txt
 
             # Restart FastAPI application
-            sudo systemctl restart fastapi-app
+            sudo systemctl restart fastapi
             echo "Application restarted successfully"
 
             sudo systemctl restart nginx
